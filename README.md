@@ -1,1 +1,1 @@
-# cookie-stand
+Project for Salmon Cookies
