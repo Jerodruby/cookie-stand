@@ -178,7 +178,7 @@ SeaCenter.render = function (){
     ul_el.appendChild(hour_li_el);
   }
   console.log(this.cookies_sold_each_hour);
-  console.log('Hi!');
+  console.log('Test');
   
   
   li_el.appendChild(h2_el);
