@@ -125,21 +125,55 @@ Alki.render = function (){
   target.appendChild(li_el);
 
 };
+
+
 Alki.calculate_cookies_sold_each_hour();
 Alki.render();
 
-// var SeaCenter = {
-//   min_cust : 11,
-//   max_cust : 38,
-//   avg_cookies_per_customer: 3.7,
-//   store_name : 'SeaCenter',
-//   store_open: 8,
-//   store_close: 19,
-//   cookies_sold_each_hour: []
-// } ;
+var SeaCenter = {
+  min_cust : 11,
+  max_cust : 38,
+  avg_cookies_per_customer: 3.7,
+  store_name : 'SeaCenter',
+  store_open: 8,
+  store_close: 19,
+  cookies_sold_each_hour: []
+} ;
 
-// SeaCenter.calculate_cookies_sold_each_hour = function {
-//   var random_customers = Math.floor(_random(this.min_cust, this.max_cust));
-//   return Math.floor(this.avg_cookies_per_customer * random_customers);
+SeaCenter.calculate_cookies_per_hour = function(){
+  var random_customers = Math.floor(_random(this.min_cust, this.max_cust));
+  return Math.floor(this.avg_cookies_per_customer * random_customers);
+};
 
-// };
+SeaCenter.calculate_cookies_sold_each_hour = function(){
+  for (var i = this.store_open; i < this.store_close; ++i){
+    var cookies_sold = this.calculate_cookies_per_hour();
+    this.cookies_sold_each_hour.push(cookies_sold);
+  }
+
+};
+SeaCenter.render = function (){
+  var target = document.getElementById('store-container');
+  var li_el = document.createElement('li');
+  var h2_el = document.createElement('h2');
+  var ul_el = document.createElement('ul');
+
+  h2_el.textContent = this.store_name;
+
+  for(var i = 0; i < this.cookies_sold_each_hour.length; i++){
+    console.log(i);
+    console.log(this.cookies_sold_each_hour[i]);
+    var hour_li_el = document.createElement('li');
+    hour_li_el.textContent = this.cookies_sold_each_hour[i];
+    ul_el.appendChild(hour_li_el);
+  }
+  console.log(this.cookies_sold_each_hour);
+  
+  li_el.appendChild(h2_el);
+  li_el.appendChild(ul_el);
+  target.appendChild(li_el);
+
+};
+
+SeaCenter.calculate_cookies_sold_each_hour();
+SeaCenter.render();
