@@ -168,6 +168,8 @@ SeaCenter.render = function (){
     ul_el.appendChild(hour_li_el);
   }
   console.log(this.cookies_sold_each_hour);
+  console.log('Hi!');
+  
   
   li_el.appendChild(h2_el);
   li_el.appendChild(ul_el);
