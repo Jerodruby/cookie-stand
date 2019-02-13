@@ -3,10 +3,10 @@
 
 //Helper Functions
 
-var _random = function(min,max) // min and max included
-{
-  return Math.floor(Math.random()*(max-min)+min);
-}
+//var _random = function(min,max) // min and max included
+//{
+  //return Math.floor(Math.random()*(max-min)+min);
+//}
 
 
 
@@ -79,7 +79,7 @@ List of Stores
 
     }
     */
-
+/*
 var Alki = {
   min_cust : 2,
   max_cust : 16,
@@ -178,4 +178,75 @@ SeaCenter.render = function (){
 };
 
 SeaCenter.calculate_cookies_sold_each_hour();
-SeaCenter.render();
+SeaCenter.render(); 
+
+*/
+
+/*===============Commenting out Lab 6 with Lab 7 below==============================*/
+
+/* 1. Create a single constructor function when called with new creates instances
+
+    var cookie store location = new cookie store location (20, 32, 40);
+    function Location(location, total number of cookies needed, hourly breakdown of cookie sales, totals)
+    this.location = 
+    this.total number cookies =
+    this. totals =
+    this.        = function () {
+
+      return this. - this
+    }
+   Result: Creates new instances when called with 'new' */
+
+function Locations(name, cookies_needed, hourly_sales){
+  this.name = name;
+  this.cookies_needed = cookies_needed;
+  this.hourly_sales = hourly-sales;
+  this.projected-cookies = function(){
+    return this.cookies_needed / hourly_sales;
+
+  }
+  var AlkiLocations = new Locations ('Alki') 
+  var SeaCenterLocations = new Locations ('SeaCenter')
+  console.log(constructor)
+
+  Alki.calculate_cookies_needed = function(){
+    var Alki= Math.floor(_random(this.min_hourly-sales, this.max_hourly-sales));
+    return Math.floor(this.????);
+  };
+
+  Alki.render = function (){
+    var target = document.getElementById('store-container');
+    var li_el = document.createElement('li');
+    var h2_el = document.createElement('h2');
+    var ul_el = document.createElement('ul');
+  };
+
+  li_el.appendChild(h2_el);
+  li_el.appendChild(ul_el);
+  target.appendChild(li_el);
+
+  Alki.calculate_Locations();
+  Alki.render();
+
+  SeaCenter.calculate_cookies_needed = function(){
+    var SeaCenter = Math.floor(_random(this.min_hourly_sales, this.max_hourly_sales));
+    return Math.floor(this.???);
+  };
+
+  SeaCenter.render = function (){
+    var target = document.getElementById('store-container');
+    var li_el = document.createElement('li');
+    var h2_el = document.createElement('h2');
+    var ul_el = document.createElement('ul');
+  };
+
+  li_el.appendChild(h2_el);
+  li_el.appendChild(ul_el);
+  target.appendChild(li_el);
+
+  SeaCenter.calculate_Locations();
+  SeaCenter.render();
+
+    }
+
+  };
