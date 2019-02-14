@@ -48,8 +48,8 @@ var Salmon = function (location, min_cust, max_cust, avg_cookies_per_customer, s
 };
 
 Salmon.prototype.calculate_cookies_per_hour = function(){
-  console.log(this.max);
-  console.log(this.min);
+  console.log(this.max_cust);
+  console.log(this.min_cust);
   var random_customers = Math.floor(Math.floor(Math.random()*(this.max-this.min)+this.min));
   console.log(random_customers);
   // console.log(Math.floor(this.avg_cookies_per_customer * random_customers));
