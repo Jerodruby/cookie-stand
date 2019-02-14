@@ -18,18 +18,18 @@ var Salmon = function (location, min_cust, max_cust, avg_cookies_per_customer, s
   this.min_cust = min_cust;
   this.max_cust = max_cust;
   this.avg_cookies_per_customer = avg_cookies_per_customer;
-  this.store_name = store_name;
+  /*this.store_name = store_name;
   this.store_open = store_open; 
   this.store_close = store_close;
+  this.cookies_sold_each_hour = cookies_sold_each_hour;*/
   this.calculate_cookies_per_hour();
-  this.cookies_sold_each_hour = cookies_sold_each_hour;
   this.render();
 };
 
 Salmon.prototype.calculate_cookies_per_hour = function(){
-  console.log(this.max);
-  console.log(this.min);
-  var random_customers = Math.floor(Math.floor(Math.random()*(this.max-this.min)+this.min));
+  console.log(this.max-cust);
+  console.log(this.min-cust);
+  var random_customers = Math.floor(Math.floor(Math.random()*(this.max_cust-this.min-cust)+this.min_cust);
   console.log(random_customers);
   // console.log(Math.floor(this.avg_cookies_per_customer * random_customers));
   return Math.floor(this.avg_cookies_per_customer * random_customers);
