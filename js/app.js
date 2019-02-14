@@ -1,38 +1,17 @@
 'use strict';
 
+document.addEventListener('click', function(event){
+  console.log(event);
 
-//Helper Functions
+}
+
 
 /*var _random = function(min,max) // min and max included
 {
-  return Math.floor(Math.random()*(max-min)+min);*/
-
-var _random = function(min,max) // min and max included
-{
   console.log('random #' + Math.floor(Math.random()*(max-min)+min));
-  return Math.floor(Math.random()*(max-min)+min);
-};
+  return Math.floor(Math.random()*(max-min)+min); 
+}; */
 
-_random(1, 10);
-
-/* 1. Create a single constructor function when called with new creates instances
-    var cookie store location = new cookie store location (20, 32, 40);
-    function Location(location, total number of cookies needed, hourly breakdown of cookie sales, totals)
-    this.location = 
-    this.total number cookies =
-    this. totals =
-    this.        = function () {
-      return this. - this
-    }
-   Result: Creates new instances when called with 'new' 
-
-   function Locations(name, cookies_needed, hourly_sales){
-    this.name = name;
-    this.cookies_needed = cookies_needed;
-    this.hourly_sales = hourly-sales;
-    this.projected-cookies = function(){
-      return this.cookies_needed / hourly_sales; */
-  
 
 var Salmon = function (location, min_cust, max_cust, avg_cookies_per_customer, store_name, store_open, store_close, cookies_sold_each_hour){
   this.location = location;
