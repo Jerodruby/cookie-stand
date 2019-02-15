@@ -1,5 +1,32 @@
 'use strict';
 
+
+document.addEventListener('click' , function(event){
+  console.log(event);
+  //clicks ++;
+  //console.log(clicks);
+});
+
+var input = document.getElementById('input-to-change');
+input.addEventListener('change', function(form_event){
+  console.log(form_event.target.value);
+
+});
+
+var button = document.getElementById('button-click');
+var handle_button_press = function(event){
+
+};
+
+button.addEventListener('click' , handle_button_press);
+
+
+
+
+
+
+
+
 /*document.addEventListener('click', function(event){
   console.log(event);*/
 
@@ -13,15 +40,15 @@
 }; */
 
 
-var Salmon = function (location, min_cust, max_cust, avg_cookies_per_customer, store_open, store_close){
+/*var Salmon = function (location, min_cust, max_cust, avg_cookies_per_customer, store_open, store_close){
   this.location = location;
   this.min_cust = min_cust;
   this.max_cust = max_cust;
   this.avg_cookies_per_customer = avg_cookies_per_customer;
-  /*this.store_name = store_name;*/
+  /*this.store_name = store_name;*
   this.store_open = store_open; 
   this.store_close = store_close;
-  /*this.cookies_sold_each_hour = cookies_sold_each_hour;*/
+  /*this.cookies_sold_each_hour = cookies_sold_each_hour;*
   this.cookies_sold_each_hour = [];
   this.calculate_cookies_sold_each_hour();
   this.render();
@@ -75,7 +102,7 @@ for (var i = store_open; i <= store_close; i++) {
   for (i = 0; i <= stores; i++){
     console.log(store_open, store_close, stores);
   } 
-}*/
+}
 
 new Salmon('Alki', 2, 16, 4.6, 8, 19);
 new Salmon('CapHill', 20, 38, 2.3, 8, 19);
