@@ -9,19 +9,23 @@
 <body>
 
   <h1>CLICK HERE</h1>
-  <form>
-      <input type="button" value="Click Me!" onclick="inform()">
+  <form id="store-form">
     <fieldset>
+    Time: <input name="Section-1" id="input-to-change" type="text"><br>
+    Date: <input name="Section-2" type="text"><br>
     Location: <input type= "text"><br>
-    Minimum # of Customers: <input type= "text"><br>
-    Maximum # of Customers: <input type= "text"><br>
+    Minimum Number of Customers: <id="<input type= "text"><br>
+    Maximum Number of Customers: <input type= "text"><br>
     Average Cookies per Customer: <input type= "text"><br>
-    Store Name: <input type= "text"><br>
     Store Opens: <input type= "text"><br>
     Store Closes: <input type= "text"><br>
     Cookies Sold Each Hour: <input type= "text"><br>
+    <input name= "Section-3" type="submit"><br>
   </fieldset>
   </form>
+  <input type="button" value="Click Me!" onclick="inform()">
+  <button id="button-clicker">Press Here!</button>
+  <script src="js/app.js"></script> 
 </body>
 </html>
 

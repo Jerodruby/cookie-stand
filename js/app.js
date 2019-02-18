@@ -1,9 +1,38 @@
 'use strict';
 
-/*document.addEventListener('click', function(event){
-  console.log(event);*/
+document.addEventListener('click', function(event){
+  console.log(event);
 
-/*}
+});
+
+document.addEventListener ('mouseover', console.log);
+
+var form =document.getElementById('form-to-change');
+form.addEventListener('change', function(event){
+
+});
+
+var button=document.getElementById('button-clicker');
+var handle_button_press=function(event){
+  alert('Nice Work!');
+};
+button.addEventListener('click', handle_button_press);
+
+var form = document.getElementById('store-form');
+form.addEventListener('submit', function(formSubmit){
+  formSubmit.preventDefault();
+  var time = formSubmit.target.time.value;
+  var date = formSubmit.date.date.value;
+  var location = formSubmit.target.location.value;
+  var minimum_number_of_customers = formSubmit.target.minimum_number_of_customers.value;
+  var maximum_number_of_customers = formSubmit.target.maximum_number_of_customers.value;
+  var average_cookies_per_customer = formSubmit.target.average_cookies_per_customer.value;
+  var store_open = formSubmit.target.store_open.value;
+  var store_closes = formSubmit.target.store_closes.value;
+  var cookies_sold_each_hour = formSubmit.target.calculate_cookies_sold_each_hour.value;
+  
+});
+
 
 
 /*var _random = function(min,max) // min and max included
