@@ -5,33 +5,76 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
 </head>
 <body>
-<body style="background-color:rgb(22, 196, 240);"></body>
- <img src="https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/fish.jpg" alt="Fish" width="300" height="200">
-  <h1>CLICK HERE</h1>
-  <button id="button-click">CLICK</button>
-  <form>
-      <!--<input type="button" value="Click Me!" onclick="inform()"!-->
-      <h2>Text Below</h2>
-      <input id ="input-to-change"  type="text">
+<nav>
+  <ul>
+  <a href="Our Story">Our Story |</a>
+  <a href="Orders">Orders |</a> 
+  <a href="Reviews">Reviews |</a>
+  <a href="In the Press">In the Press |</a>
+  <a href="Contact Us">Contact Us</a>
+  </ul>
+</nav>
+<div class="header">
+  <h1 class="cookies">Salmookies</h1>
+  <h2 class="best">Seattle's Best Salmon Cookies!</h2>
+</div>
+<section id="borders">
+ <img src="https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/fish.jpg" alt="Fish" width="150" height="100">
+ <img src="https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/salmon.png" alt="Salmon" width="250" height="111">
+ <img src="https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/cutter.jpeg" alt="Fish" width="200" height="100">
+ <img src=" https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/shirt.jpg" alt="Salmon" width="200" height="111">
+ <img src="https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/chinook.jpg" alt="Fish" width="225" height="100">
+ <img src="https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/family.jpg" alt="Fish" width="175" height="100">
+</section>
+
+<blockquote>"Best cookies in Seattle! You have to try them.<br> 
+  They're a Seattle staple. There aren't many better combinations<br> 
+  than cookies and salmon." - Mr. Limpet</blockquote>
+
+  <h1 class="personal">CLICK HERE TO ORDER</h1>
+  <button id="button-click">ORDER</button>
+  <h2>Or Enter Information Here</h2>
+  <form id="info">
     <fieldset>
-    Location: <input type= "text"><br>
-    Minimum # of Customers: <input type= "text"><br>
-    Maximum # of Customers: <input type= "text"><br>
-    Average Cookies per Customer: <input type= "text"><br>
-    Store Name: <input type= "text"><br>
-    Store Opens: <input type= "text"><br>
+    How Many Cookies? <input type= "text"><br>
+    First Name: <input type= "text"><br>
+    Last Name: <input type= "text"><br>
+    Address: <input type= "text"><br>
+    Address Line 2: <input type= "text"><br>
+    Phone Number: <input type= "text"><br>
+    Email: <input type= "text"><br>
     Store Closes: <input type= "text"><br>
-    Cookies Sold Each Hour: <input type= "text"><br>
-  </fieldset>
+    <button id="button1">PAY NOW</button>
+   </fieldset>
   </form>
-  <button id="button-click">CLICK</button>
-  <img src="https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/salmon.png" alt="Salmon" width="1000" height="333">
+  <img src="https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/frosted-cookie.jpg" alt="Salmon" width="225" height="100">
+  <img src=" https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/shirt.jpg" alt="Salmon" width="220" height="111">
+  <img src="https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/salmon.png" alt="Salmon" width="360" height="111">
+  <img src="https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/fish.jpg" alt="Fish" width="200" height="100">
+  <img src="https://raw.githubusercontent.com/codefellows/seattle-201d45/master/class-09-css_wireframe_part_1/lab/assets/cutter.jpeg" alt="Fish" width="210" height="100">
 
+  <h3>Address:</h3>
+    <p>
+      111 Post Alley<br>
+      Seattle, WA 98102
+    </p>
 
+  <h3>Hours:</h3>
+    <p>
+      Monday - Friday: 10AM-6PM<br>
+      Saturday - Sunday: 12PM-5PM
+    </p>
 
-  <script src="js/app.js"></script> 
+  <h3>Contact Info:</h3>
+    <p>
+      205-555-7849 <br>
+      Salmookies@gmail.com
+    </p>
+    <script src="js/app.js"></script> 
 </body>
 </html>
 

@@ -1,10 +1,85 @@
 #store-container {
-  
+
 }
 
+@import url(https://fonts.googleapis.com/css?family=Coiny);
 
 body {
+  
+    background-color: rgb(91, 128, 170)
+}
 
-    background: aquamarine
+*{
+    color: rgb(7, 13, 97);
+    font-family: Georgia;
+}
+
+nav {
+    display: inline-block;
+    color: rgb(41, 202, 207);
+    font-size: 20px;
+    float: right;
+    padding: 20px;
+}
+
+.cookies {
+    font: arial;
+    color: rgb(82, 206, 71);
+    font-size: 100px;
+    padding: 20px; 
+}
+
+.best {
+    font-family: "coiny"; 
+    color: rgb(41, 202, 207);
+    font-size: 30px;
+    padding: 20px;
+}
+
+h2 {
+    padding: 10px;
+}
+
+.info {
+    padding: 10px;
+}
+
+.fish {
+    padding: 20px;
 
 }
+
+.personal{
+    padding: 10px; 
+}
+
+h3 {
+    font: Arial;
+    color: rgb(82, 206, 71);
+    font-size: 30px;
+    padding: 10px;
+}
+
+p {
+    font: Verdana;
+    color: rgb(41, 202, 207);
+    font-size: 20px; 
+}
+blockquote {
+    float: right;
+    color: rgb(41, 202, 207);
+    width: 500px;
+    font-size: 30px;
+    font-style: italic;
+    margin: 10px 10px 10px 50px;
+    padding: 20px;
+}
+
+button {
+    font: Arial;
+    color: rgb(82, 206, 71);
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgb(7, 13, 97);
+}
+
