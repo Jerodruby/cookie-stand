@@ -83,3 +83,11 @@ button {
     background-color: rgb(7, 13, 97);
 }
 
+ #store-container{
+    color: rgb(7, 13, 97);
+    font-family: Georgia;
+    font-size: 20px;
+    padding-left: 20px;
+
+}
+
